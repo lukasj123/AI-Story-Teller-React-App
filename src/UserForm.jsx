@@ -2,7 +2,7 @@ import './UserForm.css';
 import { useState } from 'react';
 import generatePrompt from './Helper/generatePrompt';
 
-export default function UserForm({fetchStory}) {
+export default function UserForm({currentTheme, fetchStory}) {
 
         const [formData, setformdata] = useState({
             firstName: '',
@@ -43,7 +43,7 @@ export default function UserForm({fetchStory}) {
 
     return (
         <>
-            <form className="user-form" onSubmit={handleSubmit}>
+            <form className={`user-form ${currentTheme}`} onSubmit={handleSubmit}>
                 <label htmlFor="firstName" >First Name:</label>
                 <input type="text" name="firstName" id="firstName" onChange={handleChange}/>
 
