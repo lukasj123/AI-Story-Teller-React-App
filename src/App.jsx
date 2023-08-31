@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <div className={`app ${currentTheme}`}>
-        <button className={'dark-mode-btn'} onClick={toggleTheme}>Toggle Theme</button>
+        <button className={'dark-mode-btn'} onClick={toggleTheme}>Toggle Dark Mode</button>
         <UserForm currentTheme={currentTheme} fetchStory={fetchStory} />
         {isLoading ? <h1>Loading...</h1> : story}
       </div>
