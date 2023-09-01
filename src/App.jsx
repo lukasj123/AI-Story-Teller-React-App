@@ -31,7 +31,7 @@ function App() {
       <div className={`app ${currentTheme}`}>
         <button className={'dark-mode-btn'} onClick={toggleTheme}>Toggle Dark Mode</button>
         <UserForm currentTheme={currentTheme} fetchStory={fetchStory} />
-        {isLoading ? <h1>Loading...</h1> : story}
+        {isLoading ? <h1>Loading...</h1> : <div className='story-div'><p className='story-content'>{story}</p></div>}
       </div>
     </>
   )

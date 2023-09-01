@@ -9,6 +9,7 @@ body.light {
 
 .app {
   text-align: center;
+  justify-content: center;
   
 }
 
@@ -39,6 +40,18 @@ body.light {
 p.story-body {
   margin: 0;
 }
+
+.story-div {
+  display: flex;
+  justify-content: center;
+}
+
+p.story-content {
+  margin: 0;
+  max-width: 400px;
+  text-align: justify;
+}
+
 p.story-header {
   margin: 0;
 }
